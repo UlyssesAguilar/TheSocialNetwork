@@ -11,7 +11,8 @@ class user_info
         std::vector<TSN::user_information> user_info_pub; 
     public: 
         TSN::user_information setup_user();
-        int edit_user();
+        TSN::user_information load_user();
+        TSN::user_information edit_user();
         int list_user();
         int sub();
         int pub();
