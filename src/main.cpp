@@ -9,8 +9,7 @@ int main ( int argc, char* argv[] )
 {
     
     std::cout << "TheSocialNetwork" << std::endl;
-    //humor 
-    std::cout << "welcome to the worst social media program ever produced!!" << std::endl;
+    
     //open our save file 
     std::fstream file;
     file.open("save.tsn");
@@ -87,14 +86,21 @@ int main ( int argc, char* argv[] )
         UserInfo_pub.publish(user.load_user());
     }
     int menu=-1;
+
     while(menu!=0)
     {
+        //each menu operation will try and recieve user info
+        std::vector<TSN::user_information> V = UserInfo_sub.recv();
+        //must check if new people actually exsist
+        //std::cout << "before if statement" <<endl;
+        
+        
         ///// adding menu
-	std::cout << "=============================\n" 
+	    std::cout << "=============================\n" 
              << "Welcome to THE SOCIAL NETWORK\n"
              << "=============================\n"
              << "(1) List Users\n"
-             << "(2) Show User\n"
+             << "(2) Show local User\n"
              << "(3) Edit\n"
              << "(4) Resync\n"
              << "(5) Add Posting\n"
@@ -107,13 +113,20 @@ int main ( int argc, char* argv[] )
         {
             //This command will print out all of the users
             case 1:
-            cout << "This will print out all the users" << endl;
-				
+            //cout << "This will print out all the users" << endl;
+            if(V[0].uuid !=NULL && user.check_user(V[0]))
+                {   
+                    //std::cout << "passed if statement" <<endl;
+                    user.store_sub(V[0]);
+                }
+            user.list_user();
             break;
 
             //This command will show us any users information
             case 2:
             cout << "This will show any users information" << endl;
+            user.show_user();
+            cout<< "show user done" << endl;
             break; 
 
             case 3: 
@@ -123,6 +136,7 @@ int main ( int argc, char* argv[] )
 
             case 4:
             cout << "This is a system test command where all the saved data is forgotten and sending of data is reset" << endl;
+            user.resync();
             break;
 
             case 5:

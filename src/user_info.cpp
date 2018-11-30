@@ -136,6 +136,7 @@ TSN::user_information user_info::edit_user()
     //but only if the size is greater then 1
     int size;
     size = static_cast<int>(user_info_pub.size());
+    size = size + static_cast<int>(user_info_sub.size());
     //create arrays to easily store eatch user 
     string struuid[size];
     std::string first_name[size];
@@ -303,5 +304,134 @@ TSN::user_information user_info::edit_user()
     
     
     return a;
+};
+void user_info::show_user()
+{   //open file 
+    std::ifstream file;
+    file.open("save.tsn");
+    string struuid;
+    std::string first_name;
+    std::string last_name;
+    int birth;
+    int num_inter=0;
+    std::vector<std::string> interest;
+    int num_post=0;
+    std::string temp;
+    //std::cout << "before reading file" << endl;
+    file >> struuid;
+    
+    file >> first_name;
+
+    file >> last_name;
+    file >> birth;
+    
+    file >> num_inter;
+    //std::cout << "number of interest:" << num_inter<<endl;
+    for(int i =0;i<num_inter;i++)
+    {
+        file >> temp;
+        interest.push_back(temp);
+    }
+    file >> num_post;
+    std::cout << "uuid " << struuid << endl;
+    std::cout << "first name: " << first_name << endl;
+    std::cout << "last name: " << last_name << endl;
+    std::cout << "birth date: "<< birth << endl;
+    std::cout << "number of interest: " << num_inter << endl;
+    for(int i =0;i<num_inter;i++)
+    {
+        std::cout << "interest " << i+1 << " : " << interest[i] << endl;
+    }
+    std::cout << "number of highest post: " << num_post << endl;
+    file.close();
+};
+void user_info::store_sub(TSN::user_information a)
+{   //cout << "in store_sub function"<<endl;
+        if(check_user(a))
+        {
+        //open file
+        std::ofstream infile;
+        infile.open("save.tsn",ios::app);
+        // copy to file 
+        infile << a.uuid << endl;
+        infile << a.first_name << endl;
+        infile << a.last_name << endl;
+        infile << a.date_of_birth << endl;
+        infile << a.interests.length() << endl;
+        for(int i =0;(unsigned)i<a.interests.length();i++)
+        {
+            infile << a.interests[i] << endl;
+        }
+        infile << a.number_of_highest_post << endl;
+        infile.close();
+        user_info_sub.push_back(a);
+        }
+};
+void user_info::list_user()
+{   int size;
+    size = static_cast<int>(user_info_sub.size());
+    std::cout << "Received : user_information" << std::endl;
+    std::cout << "               " << user_info_pub[0].uuid << " "
+                                << user_info_pub[0].first_name << " "
+                                << user_info_pub[0].last_name  << " "
+                                << " date of birth " 
+                                << user_info_pub[0].date_of_birth << std::endl;
+    std::cout << "               " 
+                                << "number of posts " 
+                                << user_info_pub[0].number_of_highest_post << std::endl;
+    std::cout << "               ";
+    for (unsigned int i=0;i<user_info_pub[0].interests.length ();i++)
+    {
+        std::cout << "(" << user_info_pub[0].interests[i] << ") "; 
+    }
+    std::cout << std::endl;
+    //print users found in sub vector
+    for(int j =0;j<size;j++)
+    {
+    std::cout << "Received : user_information" << std::endl;
+    std::cout << "               " << user_info_sub[j].uuid << " "
+                                << user_info_sub[j].first_name << " "
+                                << user_info_sub[j].last_name  << " "
+                                << " date of birth " 
+                                << user_info_sub[j].date_of_birth << std::endl;
+    std::cout << "               " 
+                                << "number of posts " 
+                                << user_info_sub[j].number_of_highest_post << std::endl;
+    std::cout << "               ";
+    for (unsigned int i=0;i<user_info_sub[j].interests.length ();i++)
+    {
+        std::cout << "(" << user_info_sub[j].interests[i] << ") "; 
+    }
+    std::cout << std::endl;
+    }
+};
+bool user_info::check_user(TSN::user_information a)
+{
+    int size;
+    size = static_cast<int>(user_info_sub.size());
+        
+    if(a.uuid == user_info_pub[0].uuid)
+    {   
+        return false;
+    }
+    if(size>0)
+    {
+        for(int i = 0;i<size;i++)
+        {
+            if(a.uuid == user_info_sub[i].uuid)
+            {
+                return false;
+            }
+        }
+    }
+    return true;
 
 };
+void user_info::resync()
+{
+    std::ofstream infile;
+    infile.open("save.tsn",ios::trunc);
+    infile.close();
+    user_info_sub.clear();
+    user_info_pub.clear();
+}

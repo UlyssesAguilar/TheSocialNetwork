@@ -10,7 +10,7 @@ CFLAGS = -Wall -O0 -g -I. \
 
 CXXFLAGS = -std=c++11
 
-all: stalker tsn
+all:tsn
 
 
 IDL_GENERATED_H= \
@@ -36,13 +36,10 @@ COMMON_CPP= src/CheckStatus.cpp src/DDSEntityManager.cpp
 COMMON_H= src/dds_io.h src/CheckStatus.h src/DDSEntityManager.h  
 
 
-stalker: ${IDL_GENERATED_H} ${IDL_GENERATED_CPP} src/stalker.cpp ${COMMON_CPP} ${COMMON_H}
-	g++ -o $@ ${CFLAGS} ${CXXFLAGS} $^ ${LIBS}
-
 tsn: ${IDL_GENERATED_H} ${IDL_GENERATED_CPP} src/ConsoleOutput.h src/ConsoleOutput.cpp src/user_info.h src/user_info.cpp src/DataStore.cpp src/main.cpp ${COMMON_CPP} ${COMMON_H}
 	g++ -o $@ ${CFLAGS} ${CXXFLAGS} $^ ${LIBS}
 
 clean:
-	-rm -f stalker tsn
+	-rm -f tsn
 	-rm -f ${IDL_GENERATED_H} ${IDL_GENERATED_CPP}
 	-rm -f ospl-error.log ospl-info.log

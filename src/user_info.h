@@ -13,9 +13,14 @@ class user_info
         TSN::user_information setup_user();
         TSN::user_information load_user();
         TSN::user_information edit_user();
-        int list_user();
-        int sub();
-        int pub();
+        void list_user();
+        // shows only our user info
+        void show_user();
+        void store_sub(TSN::user_information a);
+        //check is uuid is already saved. 
+        bool check_user(TSN::user_information a);
+        // delete everything from file
+        void resync();
         
 };
    
