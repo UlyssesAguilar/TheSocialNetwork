@@ -117,8 +117,8 @@ int main ( int argc, char* argv[] )
             break; 
 
             case 3: 
-            UserInfo_pub.publish(user.edit_user());
             cout << "This will allow a user to edit or enter in their information" << endl;
+            UserInfo_pub.publish(user.edit_user());
             break;
 
             case 4:
