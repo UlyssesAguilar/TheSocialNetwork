@@ -45,3 +45,332 @@ Node        : cse1325
 Process     : tsn <19611>
 Thread      : ddsi2 7f721240c700
 Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543612894.317517630/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:33:48 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1947834584 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <19850>
+Thread      : spliced 7f5b36f6a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543613628.720823731/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:33:48 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <19850>
+Thread      : spliced 7f5b36f6a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543613628.724217866/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:33:48 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <19850>
+Thread      : spliced 7f5b36f6a700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543613628.724962539/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:33:48 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <19850>
+Thread      : ddsi2 7f5b3490d700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543613628.731304461/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:40:20 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 949365530 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20146>
+Thread      : spliced 7f3a9481c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614020.894576369/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:40:20 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20146>
+Thread      : spliced 7f3a9481c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614020.895653761/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:40:20 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20146>
+Thread      : spliced 7f3a9481c700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614020.897195125/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:40:20 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20146>
+Thread      : ddsi2 7f3a921bf700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614020.904416543/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:41:33 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1031455190 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20244>
+Thread      : spliced 7f55c7562700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614093.556483050/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:41:33 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20244>
+Thread      : spliced 7f55c7562700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614093.558638646/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:41:33 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20244>
+Thread      : spliced 7f55c7562700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614093.560040872/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:41:33 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20244>
+Thread      : ddsi2 7f55c4f05700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614093.572663877/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:42:50 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1326014052 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20309>
+Thread      : spliced 7f26744cd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614170.669483928/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:42:50 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20309>
+Thread      : spliced 7f26744cd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614170.670524622/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:42:50 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20309>
+Thread      : spliced 7f26744cd700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614170.671885720/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:42:50 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20309>
+Thread      : ddsi2 7f2671e70700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614170.681704393/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:44:43 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 289182031 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20371>
+Thread      : spliced 7f133b7de700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614283.988091559/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:44:43 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20371>
+Thread      : spliced 7f133b7de700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614283.989098072/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:44:43 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20371>
+Thread      : spliced 7f133b7de700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614283.991952608/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:44:43 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20371>
+Thread      : ddsi2 7f1339181700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614283.999032747/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:49:43 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 2112583340 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20474>
+Thread      : spliced 7fbfd4c84700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614583.142346538/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:49:43 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20474>
+Thread      : spliced 7fbfd4c84700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614583.143287453/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:49:43 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20474>
+Thread      : spliced 7fbfd4c84700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614583.145026464/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:49:43 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20474>
+Thread      : ddsi2 7fbfd2627700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614583.151754955/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:54:15 CST 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 0 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+              SystemId             : 1600726677 from [1,2147483647]
+Node        : cse1325
+Process     : tsn <20574>
+Thread      : spliced 7fe311a53700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/The OpenSplice domain service/u_domain.c/659/0/1543614855.346519884/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:54:15 CST 2018
+Description : Service cmsoap disabled
+Node        : cse1325
+Process     : tsn <20574>
+Thread      : spliced 7fe311a53700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/OpenSplice domain service/sr_componentInfo.c/447/0/1543614855.347866882/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:54:15 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20574>
+Thread      : spliced 7fe311a53700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614855.349329041/0
+========================================================================================
+Report      : INFO
+Date        : Fri Nov 30 15:54:15 CST 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : cse1325
+Process     : tsn <20574>
+Thread      : ddsi2 7fe30f3f6700
+Internals   : 6.7.180404OSS/de8c6f4/de8c6f4/v_serviceChangeState/v_service.c/295/0/1543614855.354749631/0
